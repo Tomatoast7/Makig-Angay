@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <img class="gta" src="{% static 'Gta-removebg-preview.png' %}" width="200">
+
+
+    <div class="box-container">
+        <div class="container">
+            Login<br>
+            <div class="input-container">
+                <input id="user" class="username" type="email" placeholder="Enter Username"><br>
+                <input id="pass"class="password" type="password" placeholder="Enter password"><br>
+                <button id="login"><b>LOGIN</b></button><br>
+            </div>
+            <div class="bottom-note">
+                <p>Want to see my portfolio? <span><a href="{% url 'index' %}">Click Here</a></span></p>
+                <p>Want to see my Favicon? <span><a href="{% url 'favicon' %}">Click Here</a></span></p>
+                <div id="note">-</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

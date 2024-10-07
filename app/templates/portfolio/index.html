@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Cutiee By shei.jpg">
+    <title>JohnLov's Portfolio</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style_portfolio.css' %}">
+</head>
+
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1 class="name"style="text-align: center;">JohnLov</h1>
+                    <img src="{% static 'portfolio/Alphabet-J-Background-PNG-Image.png' %}" height="100"class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="{% url 'GTA' %}">Back</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm <br><span>John</span> Annilov Makig-Angay</h1>
+                </div>
+
+        </div>
+        <!-----------about---------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="{% static 'portfolio/Pogs.jpg' %}" height="300">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi my Name is <div id="name">John</div></p><p id="about-me">Annilov Makig-angay And I am 19 years Old. I am passionate
+                        About everything I wanted to do. There's nothing really interesting in me Besides the fact that I am curious and
+                    Risk taker also an opportunity taker. I am a very productive person doing my "own" Things in my own way. Regarding
+                About social life I can manage a few well with it, Make some friends,Hanging out with them etc, But I always prefer the 
+            Lowkey life I had in me. As much as Possible I always value my time because Every second of my time is important to me on whether
+        I want to use them. I try to improve every single day and be better at myself yesterday, And thats what keeps me Going.</p>
+         <br>
+         <br>                   
+            <h1 class=" quote">There Are no Talents in this world. Only fulfillment,Dedication and Effort </h1>
+            <br> <p class="end">-ME</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Java</span><br>Java Logic interfaces And Object Oriented Programming</li>
+                                    <li><span>Web Development/Html/CSS/JavaScript</span><br>Designig Web/App Interfaces</li>
+                                    <li><span>SQL</span><br>Database Approach and Simple Queries</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2021</span><br>Senior High School Project About OOP and Polymorphism</li>
+                                    <li><span>2023</span><br>Self Learning Html/Javascript/CSS in youtube</li>
+                                    <li><span>2023</span><br>Learning Through school and Online youtube Tutorial</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="hobbies">
+                                <ul>
+                                    <li><span>Guitar</span><br>Senior High School Project About OOP and Polymorphism</li>
+                                    <li><span>Piano</span><br>Self Learning Html/Javascript/CSS in youtube</li>
+                                    <li><span>Coding</span><br>Learning Through school and Online youtube Tutorial</li>
+                                    <li><span>Fitness And Gym Workout</span><br>Learning Through school and Online youtube Tutorial</li>
+                                    <li><span>Reading</span><br>Learning Through school and Online youtube Tutorial</li>
+                                    <li><span>Digital Art</span><br>Learning Through school and Online youtube Tutorial</li>
+                                    <li><span>Learning Japanese</span><br>Learning Through school and Online youtube Tutorial</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script src="{% static 'js/index_portfolio.js' %}"></script>
+
+
+    </body>
+
+
+
+
+
+
+</html>
